@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(pie2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100px 450px ;
+        }
+        h1{
+            font-size: 40px;
+            color: rgb(141, 42, 25);
+            
+        }
+        h2{
+            font-size: 15px;
+            color: rgb(216, 113, 44) ;
+        }
+
+    </style>
+    <center>
+    <h2>JavaScript Methods</h2>
+    <h1> This is a page about PIes.</h1>
+    </center>
+
+    <script>
+
+        var name;
+        name=window.prompt("What is your name? ");
+    
+        //String methods
+        var food_name = "Pie";
+        food_name.charAt(0);
+        food_name.indexOf("i");
+        console.log(food_name.length);
+        food_name.toUpperCase();
+        food_name.slice(0,2);
+    
+        //Number methods
+        var pi_the_number = 3.141592653589793238462643383279502884197;
+        pi_the_number.toPrecision(4);
+        console.log(pi_the_number.toString());
+        console.log(pi_the_number.valueOf());
+        pi_the_number.toExponential();
+        console.log(pi_the_number.toFixed());
+    
+        //Array methods
+    
+        const types_of_pies = ["<h2> Blueberry pie", " Cherry pie", " Pot pie", " Pumpkin pie", " Cream pie"];
+        types_of_pies.unshift("Pizza pie");
+        types_of_pies.length;
+        types_of_pies.delete;
+        types_of_pies.pop();
+        types_of_pies.push(" Pecan pie");
+        
+    
+        //Date methods
+    
+        date_one = new Date(2024,4,5,9);
+        date_two = new Date("2023-05-23");
+        date_three = new Date(1000);
+        date_four = new Date();
+        
+        let epoch_year = date_three.getFullYear();
+        let epoch_month = date_three.getMonth();
+        let epoch_date = date_three.getDate();
+        let epoch_hours = date_three.getHours();
+        date_two.setYear(2024);
+    
+        //Function methods
+    
+        function greetings(name){
+            document.writeln("<h2> Hello " + name + ", do you like Pies? Please let me know down below.");
+            document.writeln("<br><br><h2> Here are some names of pies to get you thinking...")
+            document.writeln("<br><br>" + types_of_pies);
+        }
+        
+        greetings(name);
+    
+    </script>
+
+    <form action="/URL" method ="GET">
+        <center>
+        <br>
+        <br>
+        <p> Yes: <input type="checkbox"> No: <input type="checkbox" <input type="checkbox"> I'm still thinking about it </p>
+        <br>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit </button>
+        <br>
+        </center>
+    </form>
+
+    <script>
+        function length_calc(list){
+            return document.write("<center><h3><br> There are only " + list.length + " pies in this list but many more pies in the world... <br>")
+        }
+        length_calc(types_of_pies);
+    </script>
+
+</body>
+
+</html>
