@@ -1,0 +1,61 @@
+body{
+    background-image: url("window1.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(224,213,219,255);
+    background-position: 70% 10%;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:601px){
+    .responsive_font_h1{
+        font-size: 170%;
+        position: fixed;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .responsive_font_h1{
+        font-size: 120%
+    }
+}
+
+@media screen and (min-width:601px){
+    .responsive_font_h2{
+        font-size: 15px;
+        position:fixed;
+        left:120px;
+        top: 575px;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .responsive_font_h2{
+        font-size: 63%;
+        position:relative;
+        left:25px;
+        top: 220px;
+    }
+}
+
+@media screen and (min-width:601px){
+    .image_pos{
+        position:fixed;
+        left:165px;
+        top: 640px;
+       
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .image_pos{
+
+        position:relative;
+        left:center;
+        top: 250px;
+        width: 90%;
+    }
+}
+
